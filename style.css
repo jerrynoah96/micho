@@ -1,0 +1,108 @@
+/*HOME PAGE CSS*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: #7CFC00;
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 10px 0 20px 0;
+}
+
+#navigation .nav a{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    color: #7CFC00;
+    cursor: pointer;
+}
+
+#navigation .nav a:hover{
+    color: white;
+}
+
+#ham {
+    cursor: pointer;
+    display: none;
+}
+
+
+/* section main body styling*/
+
+#main{
+    text-align: center;
+}
+
+#main h1{
+    color: #7CFC00;
+    font-size: 35px;
+}
+
+#main p{
+    color: black;
+    font-size: 25px;
+}
+
+#main a{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    background: #7CFC00;
+}
+
+/*footer css styling*/
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    background: black;
+    color: #7CFC00;
+    font-size: 	25px;
+}
+
+#footer li{
+    list-style: none;
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+
+
+/*media query*/
+
+@media screen and (max-width: 768px){
+    /*HOME PAGE CSS*/
+    /*navigation nav bar*/
+    #nav{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #nav.show{
+        display: flex;
+    }
+
+    #ham{
+        display: block;
+    }
+
+    a{
+        text-align: center;
+        padding: 15px;
+    }
+
+    /*section main css*/
+    
+}
